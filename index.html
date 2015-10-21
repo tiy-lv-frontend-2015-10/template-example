@@ -8,10 +8,21 @@
 <body>
   <h1>Hello World</h1>
   <div id="container"></div>
+
+
+
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.js"></script>
   <script src="main.js"></script>
+
+
+
+
+
+
+
+
   <script type="x-tmpl-mustache" id="listItemTemplate">
     <ul id="myList">
       {{#names}}
@@ -19,7 +30,21 @@
         <p>{{.}}</p>
       </li>
       {{/names}}
+      <li>
+        <p>{{instructor}}</p>
+      </li>
+      {{#fruits}}
+      <li>
+        <p>{{.}}</p>
+      <li>
+      {{/fruits}}
+      <li>
+        <p>{{car.model}}
+      </li>
     </ul>
   </script>
+
+
+
 </body>
 </html>
